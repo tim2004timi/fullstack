@@ -6,5 +6,7 @@ class People(models.Model):
     last_name = models.CharField(max_length=30)
     age = models.IntegerField()
 
+    objects = models.Manager()
+
     def __str__(self):
         return f"{self.name} {self.last_name}"
