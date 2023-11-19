@@ -1,5 +1,6 @@
 import './App.css';
 import axios from "axios";
+import React from 'react';
 
 class App extends React.Component {
   state = { details: [], }
@@ -20,9 +21,9 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <header>Данные из Django</header>
+        <header>Данные из Django </header>
         <hr></hr>
-        {this.state.details.map((output, id) =>(
+        {this.state.details.map((output, id) => (
           <div key={id}>
             <div>
               <h2>{output.title}</h2>
